@@ -1,0 +1,274 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --clr-primary-dark: rgb(24, 6, 6);
+  --clr-primary-light: seashell;
+  --clr-secondary-light: rgb(97, 25, 25);
+  --transition: all 0.3s linear;
+  --spacing: 0.15rem;
+  --radius: 0.25rem;
+  --large-screen-width: 1170px;
+  --small-screen-width: 90vw;
+  --fixed-width: 50rem;
+}
+
+/*
+=============== 
+Global Classes
+===============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica;
+  background: var(--clr-primary-dark);
+  color: var(--clr-primary-light);
+  line-height: 1.5;
+  font-size: 22px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  padding: 10px;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/*
+=============== 
+Header
+===============
+*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: var(--clr-secondary-light);
+  border-bottom: 1px solid var(--clr-primary-light);
+  width: 100%;
+  height: 69px;
+  z-index: 10;
+}
+
+header img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+/*
+=============== 
+Navbar
+===============
+*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+nav ul {
+  width: 100%;
+  text-align: right;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 20px;
+}
+
+nav li a {
+  font-size: 1.5rem;
+  color: var(--clr-primary-light);
+  text-decoration: none;
+}
+
+/*
+=============== 
+Main Container
+===============
+*/
+
+.main {
+  width: 1200px;
+  margin: auto;
+  padding-top: 69px;
+  opacity: 0.9;
+}
+
+/*
+=============== 
+Mission Section
+===============
+*/
+#mission {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+      rgba(216, 11, 11, 0.1),
+      rgba(11, 13, 109, 0.2)
+    ),
+    url("./img/img-mission-background.jpg");
+  height: 700px;
+  padding-top: 70px;
+}
+
+.content {
+  width: 100%;
+  margin: auto;
+  background: var(--clr-primary-dark);
+  text-align: center;
+}
+
+/*
+=============== 
+Store Section
+===============
+*/
+
+#store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.item-container h4 {
+  padding-top: 10px;
+}
+
+.item {
+  text-align: center;
+}
+
+.item img {
+  height: 200px;
+  width: 300px;
+  margin: 10px 10px;
+}
+
+/*
+=============== 
+Location Section
+===============
+*/
+
+#location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(
+      rgba(216, 11, 11, 0.1),
+      rgba(11, 13, 109, 0.2)
+    ),
+    url("./img/img-locations-background.jpg");
+  height: 700px;
+  padding-top: 70px;
+}
+
+#location h2 {
+  text-align: center;
+}
+
+.location-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0;
+}
+
+.location {
+  width: 300px;
+  background-color: rgb(54, 38, 38);
+  text-align: center;
+  opacity: 1;
+}
+
+.location h3,
+p {
+  padding: 20px 0;
+}
+
+/*
+=============== 
+Contact Section
+===============
+*/
+
+#contact {
+  height: 200px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/*
+=============== 
+Contact Section
+===============
+*/
+
+footer {
+  text-align: left;
+  padding: 20px;
+}
